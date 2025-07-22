@@ -32,12 +32,21 @@ body{
 }
 
 .grid{
-    display: grid;
+    display: flex;
     gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .grid div{
-    padding: 20px;
+    padding: 15px;
     border-radius: 40px;
     background-color: lightpink;
+    width: 450px;
 }
+
+
+@media (max-width: 768px){
+    body{background-color: lavender;}
+}
+
